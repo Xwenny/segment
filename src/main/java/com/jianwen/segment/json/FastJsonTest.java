@@ -265,4 +265,14 @@ public class FastJsonTest {
         }
     }
 
+    @Test
+    public void temToJson(){
+        User user = new User();
+        user.setName("Skye");
+        user.setAge(23);
+        String userJson = JSON.toJSONString(user);
+        System.out.println(userJson);
+
+    }
+
 }
